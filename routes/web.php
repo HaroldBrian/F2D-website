@@ -14,6 +14,26 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
+    return view('user.index');
+})->name('');
+
+Route::get('/about-us', function () {
+    return view('user.about-us');
+})->name('about-us');
+
+Route::get('/donation', function () {
+    return view('user.donation');
+})->name('donation');
+
+Route::get('/news', function () {
+    return view('user.news');
+})->name('news');
+
+Route::get('/contacts', function () {
+    return view('user.contacts');
+})->name('contacts');
+
+Route::get('/welcome', function () {
     return view('welcome');
 });
 
